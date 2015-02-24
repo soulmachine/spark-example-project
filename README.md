@@ -4,7 +4,7 @@
 
 This is a simple word count job written in Scala for the [Spark] [spark] cluster computing platform. This project is ported directly from [Snowplow Analytics] [snowplow]'s [Spark Example Project](https://github.com/snowplow/spark-example-project).
 
-_See also:_ [Scalding Example Project] [scalding-example-project] | [Cascalog Example Project] [cascalog-example-project]
+_See also:_ [Scalding Example Project] [scalding-example-project]
 
 ## Building
 
