@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This is a simple word count job written in Scala for the [Spark] [spark] cluster computing platform. This project is ported directly from [Snowplow Analytics] [snowplow]'s [Spark Example Project](https://github.com/snowplow/spark-example-project).
+This is a simple word count job written in Scala for the [Spark](http://spark.apache.org/) cluster computing platform. This project is ported directly from Snowplow Analytics's [Spark Example Project](https://github.com/snowplow/spark-example-project).
 
-_See also:_ [Scalding Example Project] [scalding-example-project]
+_See also:_ [Scalding Example Project](https://github.com/soulmachine/scalding-example-project)
 
 ## Building
 
@@ -30,4 +30,4 @@ The `assembly` command above runs the test suite - but you can also run this man
 
 ## Submit job to Spark on YARN
 
-    spark-submit --class me.soulmachine.spark.WordCount --master yarn-cluster ./spark-example-project-1.0.jar wordcount-test/input wordcount-test/output
+    spark-submit --class me.soulmachine.spark.WordCount --master yarn-cluster ./spark-example-project-1.0.jar wordcount-test/input wordcount-test/outputs
