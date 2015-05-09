@@ -4,7 +4,12 @@
 
 This is a simple word count job written in Scala for the [Spark](http://spark.apache.org/) cluster computing platform. This project is ported directly from Snowplow Analytics's [Spark Example Project](https://github.com/snowplow/spark-example-project).
 
-_See also:_ [Scalding Example Project](https://github.com/soulmachine/scalding-example-project)
+_See also:_ 
+
+* [JRuby Example](https://github.com/soulmachine/JRubyExample)
+* [Jython Example](https://github.com/soulmachine/JythonExample)
+* [Jparsec Example](https://github.com/soulmachine/JparsecExample)
+* [Scalding Example Project](https://github.com/soulmachine/scalding-example-project)
 
 ## Building
 
