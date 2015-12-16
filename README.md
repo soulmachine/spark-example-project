@@ -41,6 +41,19 @@ Run `sbt gen-idea` to create Idea project files, and click `File->Open...` to op
 
     spark-submit --class me.soulmachine.spark.WordCount --master yarn://ip-or-host:7077 ./spark-example-project-1.0.jar wordcount-test/input wordcount-test/outputs
 
+## Debug locally
+
+People never write code right at one time, so debugging is extremely important. To debug your spark program locally, you need to do:
+
+1. Change the `val sparkDependencyScope = "provided"` to `val sparkDependencyScope = "compile"` in `build.sbt`
+
+    When you run you Spark program on a real Spark cluster, the Spark related jars are provided by the Spark cluster. When you run it locally, your machine doesn't have Spark related jars, so you need to change `provided` to `compile`.
+
+1. Append `.setMaster("local[2]")` to your `SparkConf`
+
+    When you your Spark program locally, you don't have a Spark master, so you need to run it in local mode, by using the string `"local"` as the master. The `[2]` indicats to use 2 threads. 
+
+
 ## Static Analyzer
 
 ### linter (https://github.com/HairyFotr/linter)
